@@ -1,0 +1,160 @@
+.page-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 2.5rem;
+}
+
+.page-header h2 {
+    font-size: 2rem;
+    color: #1e293b;
+    margin-bottom: 0.5rem;
+}
+
+.page-header p {
+    color: #64748b;
+}
+
+.header-actions {
+    display: flex;
+    gap: 1rem;
+}
+
+.secondary-btn {
+    background: white;
+    color: #64748b;
+    border: 1px solid #e2e8f0;
+    padding: 0.75rem 1.25rem;
+    border-radius: 12px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.secondary-btn:hover {
+    background: #f8fafc;
+    color: var(--primary);
+    border-color: var(--primary);
+}
+
+.patients-table-container {
+    background: white;
+    border-radius: 20px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+    overflow-x: auto;
+}
+
+.patients-table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+.patients-table th {
+    padding: 1rem 1.5rem;
+    color: #64748b;
+    font-weight: 600;
+    font-size: 0.85rem;
+    border-bottom: 1.5px solid #f1f5f9;
+    text-transform: uppercase;
+    letter-spacing: 0.025em;
+}
+
+.patients-table td {
+    padding: 1.25rem 1.5rem;
+    vertical-align: middle;
+    border-bottom: 1px solid #f8fafc;
+    color: #475569;
+}
+
+.patients-table tr:hover td {
+    background-color: #fcfdfe;
+}
+
+.patient-name-cell {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.patient-initials {
+    width: 36px;
+    height: 36px;
+    background: #f1f5f9;
+    color: var(--primary);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 0.8rem;
+}
+
+.name-bold {
+    font-weight: 700;
+    color: #1e293b;
+    font-size: 0.95rem;
+}
+
+.id-sub {
+    font-size: 0.75rem;
+    color: #94a3b8;
+}
+
+.status-tag {
+    padding: 0.35rem 0.75rem;
+    border-radius: 20px;
+    font-size: 0.75rem;
+    font-weight: 600;
+}
+
+.status-tag.active {
+    background: #ecfdf5;
+    color: #059669;
+}
+
+.status-tag.needs-attention {
+    background: #fef2f2;
+    color: #ef4444;
+}
+
+.status-tag.recovered {
+    background: #eff6ff;
+    color: #3b82f6;
+}
+
+.icon-btn {
+    background: transparent;
+    border: none;
+    color: #94a3b8;
+    padding: 0.5rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.icon-btn:hover {
+    background: #f1f5f9;
+    color: #1e293b;
+}
+
+@media (max-width: 992px) {
+    .page-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1.5rem;
+    }
+
+    .header-actions {
+        width: 100%;
+    }
+
+    .header-actions button {
+        flex: 1;
+        justify-content: center;
+    }
+}
